@@ -1,0 +1,39 @@
+#firebaseui_container {
+    width: 100%;
+}
+#firebaseui_container .firebaseui-container {
+    max-width: 100%;
+}
+#firebaseui_container .firebaseui-card-content {
+    padding: 0;
+}
+#firebaseui_container .firebaseui-idp-list {
+    margin: 0;
+}
+#firebaseui_container .firebaseui-idp-list>.firebaseui-list-item {
+    margin-bottom: 0;
+}
+#firebaseui_container .firebaseui-idp-button {
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#firebaseui_container .mdl-button {
+    border: 1px solid  hsl(var(--input));
+    border-radius: calc(var(--radius) - 2px);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+#firebaseui_container .firebaseui-idp-text {
+    font-size: 1rem;
+}
+#firebaseui_container .mdl-button--raised {
+    background: #fff;
+    box-shadow: none;
+}
+#firebaseui_container .mdl-button--raised:hover,
+#firebaseui_container .mdl-button--raised:focus {
+    background: hsl(210, 40%, 96%);
+    box-shadow: none;
+}

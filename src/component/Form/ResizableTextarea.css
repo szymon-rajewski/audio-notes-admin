@@ -1,0 +1,13 @@
+.ResizableTextarea {
+  /*height: max-content;*/
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.input-box:hover{
+  border-color: hsl(222, 22%, 30%);
+}
+
+.input-box:focus{
+  border-color: hsl(222, 22%, 40%);
+}
