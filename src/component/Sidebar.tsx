@@ -26,41 +26,24 @@ export function Sidebar({ selected, className }: SidebarProps) {
     <div className={cn('pb-12', className)}>
       <div className="space-y-4 py-4">
         <div className="px-3 py-2">
-          <SidebarHeader label={'Oferty'} />
+          <SidebarHeader label={'Overview'} />
           <div className="space-y-1">
             <SidebarButton
-              label={t('sidebar.create')}
-              isSelected={selected === RoutingPath.CREATE || selected === '/'}
+              label={t('sidebar.overview')}
+              isSelected={selected === RoutingPath.MAIN || selected === '/'}
               Icon={Home}
-              onClick={() => navigate(RoutingPath.CREATE)}
-            />
-            <SidebarButton
-              label={t('sidebar.saved')}
-              isSelected={selected === RoutingPath.SAVED}
-              Icon={BookmarkCheck}
-              onClick={() => navigate(RoutingPath.SAVED)}
+              onClick={() => navigate(RoutingPath.MAIN)}
             />
           </div>
         </div>
         <div className="px-3 py-2">
-          <SidebarHeader label={t('sidebar.offerRequests')} />
+          <SidebarHeader label={t('sidebar.users')} />
           <div className="space-y-1">
             <SidebarButton
-              label={t('sidebar.offerRequestsAll')}
-              isSelected={selected === RoutingPath.OFFER_REQUESTS}
+              label={t('sidebar.all')}
+              isSelected={selected === RoutingPath.USERS}
               Icon={UserSearch}
-              onClick={() => navigate(RoutingPath.OFFER_REQUESTS)}
-            />
-          </div>
-        </div>
-        <div className="p-2">
-          <SidebarHeader label={t('sidebar.settings')} />
-          <div className="space-y-1">
-            <SidebarButton
-              label={t('sidebar.account')}
-              isSelected={selected === RoutingPath.ACCOUNT}
-              Icon={User}
-              onClick={() => navigate(RoutingPath.ACCOUNT)}
+              onClick={() => navigate(RoutingPath.USERS)}
             />
           </div>
         </div>

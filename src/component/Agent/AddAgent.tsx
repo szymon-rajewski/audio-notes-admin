@@ -117,7 +117,7 @@ export default function AddAgent({ onClick }: AddAgentProps) {
                   <AlertDialogFooter>
                     <AlertDialogAction
                       onClick={() => {
-                        navigate(RoutingPath.CREATE);
+                        navigate(RoutingPath.MAIN);
                       }}
                     >
                       Powierdź
@@ -131,7 +131,7 @@ export default function AddAgent({ onClick }: AddAgentProps) {
               type="button"
               variant="outline"
               onClick={() => {
-                navigate(RoutingPath.CREATE);
+                navigate(RoutingPath.MAIN);
               }}
             >
               Powrót

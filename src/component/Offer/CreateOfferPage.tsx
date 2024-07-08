@@ -443,7 +443,7 @@ export default function CreateOfferPage({ onClick }: CreateOfferPageProps) {
         title: 'Sukces',
         description: 'Dodano ofertę',
       });
-      navigate(RoutingPath.SAVED);
+      navigate(RoutingPath.MAIN);
     } catch (error) {
       toast({
         variant: 'destructive',
