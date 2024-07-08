@@ -26,17 +26,4 @@ export default class UserApi {
     );
     return response.data;
   }
-
-  async create() {
-    const username = process.env.USERNAME;
-    const password = process.env.PASSWORD;
-    const response = await axios.post<GetUserResponse>(
-      `${HOST}/zirraiadminapi/user`,
-      {
-        username,
-        password,
-      }
-    );
-    return response.data;
-  }
 }

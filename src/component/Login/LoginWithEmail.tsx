@@ -80,13 +80,7 @@ const LoginWithEmail: React.FC<Props> = ({ register, errors }) => {
           <p className="text-red-500 text-sm">{errors.password.message}</p>
         )}
       </div>
-      <Button
-        className="w-full"
-        type="submit"
-        onClick={() => {
-          new UserApi().create();
-        }}
-      >
+      <Button className="w-full" type="submit">
         {t('account.login')}
       </Button>
     </>
