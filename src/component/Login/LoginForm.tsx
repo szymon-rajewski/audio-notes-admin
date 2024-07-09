@@ -38,7 +38,7 @@ export default function LoginForm() {
   const onSubmit: SubmitHandler<LoginFormEmail> = async (data) => {
     try {
       const response = await axios.post<UserLoginResponse>(
-        `${HOST}/api/admin-login`,
+        `${HOST}/zirraiadminapi/login`,
         {
           username: data.login,
           password: data.password,
