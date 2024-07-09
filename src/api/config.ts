@@ -1,1 +1,1 @@
-export const HOST = 'https://zirr.ai';
+export const HOST = 'https://encrypted.zirr.ai';
