@@ -46,8 +46,13 @@ const columns: ColumnDef<User>[] = [
     accessorKey: 'sessionCount',
     header: 'Sessions/Sessions left',
     cell: ({ row }) => {
+      console.log('row', row);
       const sessionCount = row.getValue('sessionCount') as number;
       const sessionsLeft = row.getValue('sessionsLeft') as number;
+      console.log('sessionCount', sessionCount);
+      console.log('sessionsLeft', sessionsLeft);
+      console.log('sessionCount', lodash.isNumber(sessionCount));
+      console.log('sessionsLeft', lodash.isNumber(sessionsLeft));
       const sessionCountText = lodash.isNumber(sessionCount)
         ? `${sessionCount}`
         : '-';
