@@ -47,8 +47,8 @@ const columns: ColumnDef<User>[] = [
     header: 'Sessions/Sessions left',
     cell: ({ row }) => {
       console.log('row', row);
-      const sessionCount = row.getValue('sessionCount') as number;
-      const sessionsLeft = row.getValue('sessionsLeft') as number;
+      const sessionCount = row.original?.sessionCount as number;
+      const sessionsLeft = row.original?.sessionsLeft as number;
       console.log('sessionCount', sessionCount);
       console.log('sessionsLeft', sessionsLeft);
       console.log('sessionCount', lodash.isNumber(sessionCount));
