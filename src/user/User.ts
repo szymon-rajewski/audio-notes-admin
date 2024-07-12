@@ -6,8 +6,6 @@ export default interface User {
   subscriptionStatus?: SubscriptionEventStatus;
   // subscriptionEvents?: SubscriptionEvent[];
   lang: Language;
-  sessionsLeft: number;
-  sessionCount: number;
   loginMethods?: LoginMethod[];
   email?: string;
   phoneNumber?: string;
@@ -16,6 +14,10 @@ export default interface User {
   emailVerified?: boolean;
   phoneVerified?: boolean;
   name?: string;
+
+  sessionsLeft: number;
+  sessionCount: number;
+  lastSessionTime: string;
 }
 
 export type SubscriptionPlanKey = 'free' | 'pro' | 'enterprise';

@@ -68,10 +68,10 @@ const columns: ColumnDef<User>[] = [
     },
   },
   {
-    accessorKey: 'createdAt',
-    header: 'Created at',
+    accessorKey: 'lastSessionTime',
+    header: 'Last session',
     cell: ({ row }) => {
-      const updatedAt = row.getValue('createdAt') as string;
+      const updatedAt = row.getValue('lastSessionTime') as string;
       if (updatedAt) {
         const formattedDate = format(
           new Date(updatedAt),
