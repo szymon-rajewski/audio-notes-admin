@@ -9,7 +9,9 @@ export default class UserApi {
     const response = await axios.post<FindAllUsersResponse>(
       `${HOST}/zirraiadminapi/user-search?userId=${encodeURIComponent(
         userId
-      )}&page=${page}${keyword ? `&keyword=${keyword}` : ''}`,
+      )}&page=${page}${
+        keyword ? `&keyword=${encodeURIComponent(keyword)}` : ''
+      }`,
       {
         withCredentials: true,
       }

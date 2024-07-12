@@ -113,7 +113,7 @@ export default function UserListPage() {
         if (!userId) {
           throw new Error('No user ID');
         }
-        return new UserApi().getAll(userId, pageIndex + 1);
+        return new UserApi().getAll(userId, pageIndex + 1, query);
       } catch (e) {
         toast({
           variant: 'destructive',
